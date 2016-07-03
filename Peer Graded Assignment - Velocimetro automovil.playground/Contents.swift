@@ -28,25 +28,26 @@ class Auto {
         
         switch velocidad {
         case .apagado:
-            salida = (velocidad.rawValue, "Apagado")
             velocidad = Velocidades(velocidadInicial : Velocidades.velocidadBaja)
-        case .velocidadBaja:
             salida = (velocidad.rawValue, "Velocidad baja")
+        case .velocidadBaja:
             velocidad = Velocidades(velocidadInicial : Velocidades.velocidadMedia)
-        case .velocidadMedia:
             salida = (velocidad.rawValue, "Velocidad media")
+        case .velocidadMedia:
             velocidad = Velocidades(velocidadInicial : Velocidades.velocidadAlta)
-        case .velocidadAlta:
             salida = (velocidad.rawValue, "Velocidad alta")
+        case .velocidadAlta:
             velocidad = Velocidades(velocidadInicial : Velocidades.velocidadMedia)
+            salida = (velocidad.rawValue, "Velocidad media")
         }
         
-        return salida;
+        return salida
     }
 }
 
 var auto : Auto = Auto()
-
+print("\(auto.velocidad.rawValue), Apagado")
+    
 for i in 1...20 {
     
     var (valor, velocidadEnCadena) = auto.cambioDeVelocidad()
