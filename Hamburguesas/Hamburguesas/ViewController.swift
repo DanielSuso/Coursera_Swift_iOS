@@ -10,16 +10,31 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var labelPais: UILabel!
+    @IBOutlet weak var labelHamburguesa: UILabel!
+    
+    let paises = ColeccionDePaises()
+    let hamburguesas = ColeccionDeHamburguesas()
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        cambiarPaisYHamburguesa()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func pedirHamburguesa(sender: AnyObject) {
+        
+        self.cambiarPaisYHamburguesa()
     }
-
-
+    
+    func cambiarPaisYHamburguesa() {
+    
+        let pais = paises.obtenerPais()
+        labelPais.text = pais
+    
+        let hamburguesa = hamburguesas.obtenerHamburguesa()
+        labelHamburguesa.text = hamburguesa
+    }
 }
 
