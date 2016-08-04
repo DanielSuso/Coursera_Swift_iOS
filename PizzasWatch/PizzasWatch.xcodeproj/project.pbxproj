@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BE5A05481D535AA500BB9EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A05471D535AA500BB9EE0 /* AppDelegate.swift */; };
-		BE5A054A1D535AA500BB9EE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A05491D535AA500BB9EE0 /* ViewController.swift */; };
 		BE5A054D1D535AA500BB9EE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5A054B1D535AA500BB9EE0 /* Main.storyboard */; };
 		BE5A054F1D535AA500BB9EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE5A054E1D535AA500BB9EE0 /* Assets.xcassets */; };
 		BE5A05521D535AA500BB9EE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5A05501D535AA500BB9EE0 /* LaunchScreen.storyboard */; };
@@ -17,11 +16,13 @@
 		BE5A055F1D535AA500BB9EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE5A055E1D535AA500BB9EE0 /* Assets.xcassets */; };
 		BE5A05661D535AA500BB9EE0 /* PizzasWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BE5A05651D535AA500BB9EE0 /* PizzasWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BE5A056D1D535AA500BB9EE0 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A056C1D535AA500BB9EE0 /* InterfaceController.swift */; };
-		BE5A056F1D535AA500BB9EE0 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A056E1D535AA500BB9EE0 /* ExtensionDelegate.swift */; };
-		BE5A05711D535AA500BB9EE0 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A05701D535AA500BB9EE0 /* NotificationController.swift */; };
-		BE5A05731D535AA500BB9EE0 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A05721D535AA500BB9EE0 /* GlanceController.swift */; };
-		BE5A05751D535AA500BB9EE0 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A05741D535AA500BB9EE0 /* ComplicationController.swift */; };
 		BE5A05771D535AA500BB9EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE5A05761D535AA500BB9EE0 /* Assets.xcassets */; };
+		BE5A058B1D535CD500BB9EE0 /* ConfirmacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A05861D535CD500BB9EE0 /* ConfirmacionViewController.swift */; };
+		BE5A058C1D535CD500BB9EE0 /* IngredientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A05871D535CD500BB9EE0 /* IngredientesViewController.swift */; };
+		BE5A058D1D535CD500BB9EE0 /* MasaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A05881D535CD500BB9EE0 /* MasaViewController.swift */; };
+		BE5A058E1D535CD500BB9EE0 /* QuesoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A05891D535CD500BB9EE0 /* QuesoViewController.swift */; };
+		BE5A058F1D535CD500BB9EE0 /* TamanhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A058A1D535CD500BB9EE0 /* TamanhoViewController.swift */; };
+		BE5A05911D53613E00BB9EE0 /* PedidoRealizadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A05901D53613E00BB9EE0 /* PedidoRealizadoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +70,6 @@
 /* Begin PBXFileReference section */
 		BE5A05441D535AA500BB9EE0 /* PizzasWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzasWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5A05471D535AA500BB9EE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE5A05491D535AA500BB9EE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE5A054C1D535AA500BB9EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE5A054E1D535AA500BB9EE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE5A05511D535AA500BB9EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -81,12 +81,14 @@
 		BE5A05651D535AA500BB9EE0 /* PizzasWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PizzasWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5A056B1D535AA500BB9EE0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		BE5A056C1D535AA500BB9EE0 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		BE5A056E1D535AA500BB9EE0 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		BE5A05701D535AA500BB9EE0 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		BE5A05721D535AA500BB9EE0 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
-		BE5A05741D535AA500BB9EE0 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		BE5A05761D535AA500BB9EE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE5A05781D535AA500BB9EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE5A05861D535CD500BB9EE0 /* ConfirmacionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmacionViewController.swift; sourceTree = "<group>"; };
+		BE5A05871D535CD500BB9EE0 /* IngredientesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientesViewController.swift; sourceTree = "<group>"; };
+		BE5A05881D535CD500BB9EE0 /* MasaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasaViewController.swift; sourceTree = "<group>"; };
+		BE5A05891D535CD500BB9EE0 /* QuesoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuesoViewController.swift; sourceTree = "<group>"; };
+		BE5A058A1D535CD500BB9EE0 /* TamanhoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TamanhoViewController.swift; sourceTree = "<group>"; };
+		BE5A05901D53613E00BB9EE0 /* PedidoRealizadoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PedidoRealizadoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +133,12 @@
 			isa = PBXGroup;
 			children = (
 				BE5A05471D535AA500BB9EE0 /* AppDelegate.swift */,
-				BE5A05491D535AA500BB9EE0 /* ViewController.swift */,
+				BE5A058A1D535CD500BB9EE0 /* TamanhoViewController.swift */,
+				BE5A05881D535CD500BB9EE0 /* MasaViewController.swift */,
+				BE5A05891D535CD500BB9EE0 /* QuesoViewController.swift */,
+				BE5A05871D535CD500BB9EE0 /* IngredientesViewController.swift */,
+				BE5A05861D535CD500BB9EE0 /* ConfirmacionViewController.swift */,
+				BE5A05901D53613E00BB9EE0 /* PedidoRealizadoViewController.swift */,
 				BE5A054B1D535AA500BB9EE0 /* Main.storyboard */,
 				BE5A054E1D535AA500BB9EE0 /* Assets.xcassets */,
 				BE5A05501D535AA500BB9EE0 /* LaunchScreen.storyboard */,
@@ -154,10 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				BE5A056C1D535AA500BB9EE0 /* InterfaceController.swift */,
-				BE5A056E1D535AA500BB9EE0 /* ExtensionDelegate.swift */,
-				BE5A05701D535AA500BB9EE0 /* NotificationController.swift */,
-				BE5A05721D535AA500BB9EE0 /* GlanceController.swift */,
-				BE5A05741D535AA500BB9EE0 /* ComplicationController.swift */,
 				BE5A05761D535AA500BB9EE0 /* Assets.xcassets */,
 				BE5A05781D535AA500BB9EE0 /* Info.plist */,
 				BE5A056A1D535AA500BB9EE0 /* Supporting Files */,
@@ -305,8 +308,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE5A054A1D535AA500BB9EE0 /* ViewController.swift in Sources */,
+				BE5A05911D53613E00BB9EE0 /* PedidoRealizadoViewController.swift in Sources */,
 				BE5A05481D535AA500BB9EE0 /* AppDelegate.swift in Sources */,
+				BE5A058E1D535CD500BB9EE0 /* QuesoViewController.swift in Sources */,
+				BE5A058D1D535CD500BB9EE0 /* MasaViewController.swift in Sources */,
+				BE5A058F1D535CD500BB9EE0 /* TamanhoViewController.swift in Sources */,
+				BE5A058C1D535CD500BB9EE0 /* IngredientesViewController.swift in Sources */,
+				BE5A058B1D535CD500BB9EE0 /* ConfirmacionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,11 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE5A05711D535AA500BB9EE0 /* NotificationController.swift in Sources */,
-				BE5A056F1D535AA500BB9EE0 /* ExtensionDelegate.swift in Sources */,
-				BE5A05751D535AA500BB9EE0 /* ComplicationController.swift in Sources */,
 				BE5A056D1D535AA500BB9EE0 /* InterfaceController.swift in Sources */,
-				BE5A05731D535AA500BB9EE0 /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
