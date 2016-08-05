@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tv_songs: UITableView!
     @IBOutlet weak var slider_volumen: UISlider!
     @IBOutlet weak var lb_volume: UILabel!
+    @IBOutlet weak var lb_titulo: UILabel!
     
     var player = AVAudioPlayer()
     var songs : Array<Array<String>> = [["Hasta el amanecer - Nicky Jam", "Hasta_el_amanecer", ".mp3", "Hasta_el_amanecer.jpg"],
@@ -135,6 +136,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         }
         iv_cover.image = UIImage(named: songs[indexPath.row][3])
+        lb_titulo.text = (songs[indexPath.row][0] as String).stringByReplacingOccurrencesOfString(" - ", withString: "\n")
     }
 }
 
