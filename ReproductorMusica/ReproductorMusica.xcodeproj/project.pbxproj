@@ -10,8 +10,22 @@
 		BE5A059F1D54794800BB9EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A059E1D54794800BB9EE0 /* AppDelegate.swift */; };
 		BE5A05A11D54794800BB9EE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A05A01D54794800BB9EE0 /* ViewController.swift */; };
 		BE5A05A41D54794800BB9EE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5A05A21D54794800BB9EE0 /* Main.storyboard */; };
-		BE5A05A61D54794800BB9EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE5A05A51D54794800BB9EE0 /* Assets.xcassets */; };
 		BE5A05A91D54794800BB9EE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5A05A71D54794800BB9EE0 /* LaunchScreen.storyboard */; };
+		BE6828681D549FE000C4BCA7 /* Bobo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BE68285E1D549FE000C4BCA7 /* Bobo.jpg */; };
+		BE6828691D549FE000C4BCA7 /* Bobo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE68285F1D549FE000C4BCA7 /* Bobo.mp3 */; };
+		BE68286A1D549FE000C4BCA7 /* Duele_el_corazon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE6828601D549FE000C4BCA7 /* Duele_el_corazon.mp3 */; };
+		BE68286B1D549FE000C4BCA7 /* Duele_el_corazon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BE6828611D549FE000C4BCA7 /* Duele_el_corazon.jpg */; };
+		BE68286C1D549FE000C4BCA7 /* El_perdedor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE6828621D549FE000C4BCA7 /* El_perdedor.mp3 */; };
+		BE68286D1D549FE000C4BCA7 /* El_perdedor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BE6828631D549FE000C4BCA7 /* El_perdedor.jpg */; };
+		BE68286E1D549FE000C4BCA7 /* Hasta_el_amanecer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BE6828641D549FE000C4BCA7 /* Hasta_el_amanecer.jpg */; };
+		BE68286F1D549FE000C4BCA7 /* Hasta_el_amanecer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE6828651D549FE000C4BCA7 /* Hasta_el_amanecer.mp3 */; };
+		BE6828701D549FE000C4BCA7 /* La_bicicleta.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BE6828661D549FE000C4BCA7 /* La_bicicleta.jpeg */; };
+		BE6828711D549FE000C4BCA7 /* La_bicicleta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE6828671D549FE000C4BCA7 /* La_bicicleta.mp3 */; };
+		BE6828781D54AE1400C4BCA7 /* Pause.png in Resources */ = {isa = PBXBuildFile; fileRef = BE6828741D54AE1400C4BCA7 /* Pause.png */; };
+		BE6828791D54AE1400C4BCA7 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = BE6828751D54AE1400C4BCA7 /* Play.png */; };
+		BE68287A1D54AE1400C4BCA7 /* Shuffle.png in Resources */ = {isa = PBXBuildFile; fileRef = BE6828761D54AE1400C4BCA7 /* Shuffle.png */; };
+		BE68287B1D54AE1400C4BCA7 /* Stop.png in Resources */ = {isa = PBXBuildFile; fileRef = BE6828771D54AE1400C4BCA7 /* Stop.png */; };
+		BE68287E1D54AE8200C4BCA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE68287D1D54AE8200C4BCA7 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +33,23 @@
 		BE5A059E1D54794800BB9EE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE5A05A01D54794800BB9EE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE5A05A31D54794800BB9EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BE5A05A51D54794800BB9EE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE5A05A81D54794800BB9EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE5A05AA1D54794800BB9EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE68285E1D549FE000C4BCA7 /* Bobo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bobo.jpg; sourceTree = "<group>"; };
+		BE68285F1D549FE000C4BCA7 /* Bobo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bobo.mp3; sourceTree = "<group>"; };
+		BE6828601D549FE000C4BCA7 /* Duele_el_corazon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Duele_el_corazon.mp3; sourceTree = "<group>"; };
+		BE6828611D549FE000C4BCA7 /* Duele_el_corazon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Duele_el_corazon.jpg; sourceTree = "<group>"; };
+		BE6828621D549FE000C4BCA7 /* El_perdedor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = El_perdedor.mp3; sourceTree = "<group>"; };
+		BE6828631D549FE000C4BCA7 /* El_perdedor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = El_perdedor.jpg; sourceTree = "<group>"; };
+		BE6828641D549FE000C4BCA7 /* Hasta_el_amanecer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hasta_el_amanecer.jpg; sourceTree = "<group>"; };
+		BE6828651D549FE000C4BCA7 /* Hasta_el_amanecer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hasta_el_amanecer.mp3; sourceTree = "<group>"; };
+		BE6828661D549FE000C4BCA7 /* La_bicicleta.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = La_bicicleta.jpeg; sourceTree = "<group>"; };
+		BE6828671D549FE000C4BCA7 /* La_bicicleta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = La_bicicleta.mp3; sourceTree = "<group>"; };
+		BE6828741D54AE1400C4BCA7 /* Pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pause.png; sourceTree = "<group>"; };
+		BE6828751D54AE1400C4BCA7 /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
+		BE6828761D54AE1400C4BCA7 /* Shuffle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shuffle.png; sourceTree = "<group>"; };
+		BE6828771D54AE1400C4BCA7 /* Stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stop.png; sourceTree = "<group>"; };
+		BE68287D1D54AE8200C4BCA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +85,49 @@
 				BE5A059E1D54794800BB9EE0 /* AppDelegate.swift */,
 				BE5A05A01D54794800BB9EE0 /* ViewController.swift */,
 				BE5A05A21D54794800BB9EE0 /* Main.storyboard */,
-				BE5A05A51D54794800BB9EE0 /* Assets.xcassets */,
+				BE6828731D549FF900C4BCA7 /* Songs */,
+				BE6828721D549FF300C4BCA7 /* Images */,
+				BE68287C1D54AE3400C4BCA7 /* Icons */,
+				BE68287D1D54AE8200C4BCA7 /* Assets.xcassets */,
 				BE5A05A71D54794800BB9EE0 /* LaunchScreen.storyboard */,
 				BE5A05AA1D54794800BB9EE0 /* Info.plist */,
 			);
 			path = ReproductorMusica;
+			sourceTree = "<group>";
+		};
+		BE6828721D549FF300C4BCA7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BE68285E1D549FE000C4BCA7 /* Bobo.jpg */,
+				BE6828611D549FE000C4BCA7 /* Duele_el_corazon.jpg */,
+				BE6828631D549FE000C4BCA7 /* El_perdedor.jpg */,
+				BE6828661D549FE000C4BCA7 /* La_bicicleta.jpeg */,
+				BE6828641D549FE000C4BCA7 /* Hasta_el_amanecer.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		BE6828731D549FF900C4BCA7 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				BE68285F1D549FE000C4BCA7 /* Bobo.mp3 */,
+				BE6828601D549FE000C4BCA7 /* Duele_el_corazon.mp3 */,
+				BE6828621D549FE000C4BCA7 /* El_perdedor.mp3 */,
+				BE6828671D549FE000C4BCA7 /* La_bicicleta.mp3 */,
+				BE6828651D549FE000C4BCA7 /* Hasta_el_amanecer.mp3 */,
+			);
+			name = Songs;
+			sourceTree = "<group>";
+		};
+		BE68287C1D54AE3400C4BCA7 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				BE6828741D54AE1400C4BCA7 /* Pause.png */,
+				BE6828751D54AE1400C4BCA7 /* Play.png */,
+				BE6828761D54AE1400C4BCA7 /* Shuffle.png */,
+				BE6828771D54AE1400C4BCA7 /* Stop.png */,
+			);
+			name = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +188,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE68287B1D54AE1400C4BCA7 /* Stop.png in Resources */,
 				BE5A05A91D54794800BB9EE0 /* LaunchScreen.storyboard in Resources */,
-				BE5A05A61D54794800BB9EE0 /* Assets.xcassets in Resources */,
+				BE68286A1D549FE000C4BCA7 /* Duele_el_corazon.mp3 in Resources */,
+				BE6828711D549FE000C4BCA7 /* La_bicicleta.mp3 in Resources */,
+				BE6828791D54AE1400C4BCA7 /* Play.png in Resources */,
+				BE68287A1D54AE1400C4BCA7 /* Shuffle.png in Resources */,
+				BE68287E1D54AE8200C4BCA7 /* Assets.xcassets in Resources */,
+				BE6828681D549FE000C4BCA7 /* Bobo.jpg in Resources */,
+				BE68286D1D549FE000C4BCA7 /* El_perdedor.jpg in Resources */,
+				BE6828781D54AE1400C4BCA7 /* Pause.png in Resources */,
+				BE68286E1D549FE000C4BCA7 /* Hasta_el_amanecer.jpg in Resources */,
+				BE68286F1D549FE000C4BCA7 /* Hasta_el_amanecer.mp3 in Resources */,
+				BE68286C1D549FE000C4BCA7 /* El_perdedor.mp3 in Resources */,
+				BE6828691D549FE000C4BCA7 /* Bobo.mp3 in Resources */,
+				BE68286B1D549FE000C4BCA7 /* Duele_el_corazon.jpg in Resources */,
+				BE6828701D549FE000C4BCA7 /* La_bicicleta.jpeg in Resources */,
 				BE5A05A41D54794800BB9EE0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +368,7 @@
 				BE5A05AF1D54794800BB9EE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
