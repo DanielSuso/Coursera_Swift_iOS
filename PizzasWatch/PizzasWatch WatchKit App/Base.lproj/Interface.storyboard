@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
@@ -20,18 +20,19 @@
                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="96w-je-Y4g" kind="push" id="YTJ-Vc-J0Q"/>
+                                <action selector="comenzar" destination="AgC-eL-Hgc" id="pyE-69-7KH"/>
+                                <segue destination="96w-je-Y4g" kind="push" id="qRX-s4-ty3"/>
                             </connections>
                         </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="347"/>
+            <point key="canvasLocation" x="-65" y="347"/>
         </scene>
-        <!--Interface Controller-->
+        <!--TamanhoController-->
         <scene sceneID="9cs-sA-LaW">
             <objects>
-                <controller id="96w-je-Y4g">
+                <controller identifier="TamanhoController" id="96w-je-Y4g" customClass="TamanhoController" customModule="PizzasWatch_WatchKit_Extension">
                     <items>
                         <label width="1" alignment="left" text="Tamaño" textAlignment="center" id="Z1q-R2-2xK">
                             <color key="textColor" red="0.89019607840000003" green="0.074509803920000006" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
@@ -40,25 +41,25 @@
                         <group width="1" alignment="left" layout="vertical" id="she-dd-mX1">
                             <items>
                                 <separator alignment="left" id="tyh-Wh-DmQ"/>
-                                <button width="1" alignment="left" title="Mediana" id="RdM-lb-O1a">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    <connections>
-                                        <segue destination="y3k-BT-TVK" kind="push" id="9vM-NW-xNa"/>
-                                    </connections>
-                                </button>
                                 <button width="1" alignment="left" title="Chica" id="AXm-lP-JK5">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
-                                        <segue destination="y3k-BT-TVK" kind="push" id="6b3-Ta-LLn"/>
+                                        <action selector="chica" destination="96w-je-Y4g" id="wHW-8G-wj8"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="Mediana" id="RdM-lb-O1a">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="mediana" destination="96w-je-Y4g" id="9p8-3P-1vE"/>
                                     </connections>
                                 </button>
                                 <button width="1" alignment="left" title="Grande" id="Fq5-gM-LNN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
-                                        <segue destination="y3k-BT-TVK" kind="push" id="hgM-Dm-h1e"/>
+                                        <action selector="grande" destination="96w-je-Y4g" id="NCG-Ri-16w"/>
                                     </connections>
                                 </button>
                             </items>
@@ -66,12 +67,12 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="719"/>
+            <point key="canvasLocation" x="251" y="347"/>
         </scene>
-        <!--Interface Controller-->
+        <!--MasaController-->
         <scene sceneID="Qf5-Pz-aRC">
             <objects>
-                <controller id="y3k-BT-TVK">
+                <controller identifier="MasaController" id="y3k-BT-TVK" customClass="MasaController" customModule="PizzasWatch_WatchKit_Extension">
                     <items>
                         <label width="1" alignment="left" text="Masa" textAlignment="center" id="oHe-ti-I9r">
                             <color key="textColor" red="0.89019607840000003" green="0.074509803920000006" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
@@ -84,21 +85,21 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
-                                        <segue destination="Nj2-aa-VnY" kind="push" id="odO-NS-kwR"/>
+                                        <action selector="delgada" destination="y3k-BT-TVK" id="hD3-4z-6Kg"/>
                                     </connections>
                                 </button>
                                 <button width="1" alignment="left" title="Crujiente" id="zNh-b1-82D">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
-                                        <segue destination="Nj2-aa-VnY" kind="push" id="1T3-cr-8o0"/>
+                                        <action selector="crujiente" destination="y3k-BT-TVK" id="jZx-kc-HOo"/>
                                     </connections>
                                 </button>
                                 <button width="1" alignment="left" title="Gruesa" id="NT4-Cp-7Ur">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
-                                        <segue destination="Nj2-aa-VnY" kind="push" id="qc2-vL-SwV"/>
+                                        <action selector="gruesa" destination="y3k-BT-TVK" id="oZ4-H3-pgP"/>
                                     </connections>
                                 </button>
                             </items>
@@ -106,12 +107,12 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="543" y="347"/>
+            <point key="canvasLocation" x="527" y="347"/>
         </scene>
-        <!--Interface Controller-->
+        <!--QuesoController-->
         <scene sceneID="pZB-ln-akU">
             <objects>
-                <controller id="Nj2-aa-VnY">
+                <controller identifier="QuesoController" id="Nj2-aa-VnY" customClass="QuesoController" customModule="PizzasWatch_WatchKit_Extension">
                     <items>
                         <label width="1" alignment="left" text="Queso" textAlignment="center" id="zrP-XU-4h0">
                             <color key="textColor" red="0.89019607840000003" green="0.074509803920000006" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
@@ -124,28 +125,28 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
-                                        <segue destination="fnL-Ge-FKS" kind="push" id="szX-0W-7fO"/>
+                                        <action selector="mozarela" destination="Nj2-aa-VnY" id="vEM-bb-pHP"/>
                                     </connections>
                                 </button>
                                 <button width="1" alignment="left" title="Cheddar" id="fFO-yC-778">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
-                                        <segue destination="fnL-Ge-FKS" kind="push" id="0ok-mi-AAW"/>
+                                        <action selector="cheddar" destination="Nj2-aa-VnY" id="K7u-Ap-h56"/>
                                     </connections>
                                 </button>
                                 <button width="1" alignment="left" title="Parmesano" id="LAp-Ud-xLV">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
-                                        <segue destination="fnL-Ge-FKS" kind="push" id="8wj-oW-L7p"/>
+                                        <action selector="parmesano" destination="Nj2-aa-VnY" id="yHA-3i-8lp"/>
                                     </connections>
                                 </button>
                                 <button width="1" alignment="left" title="Sin queso" id="gGK-i7-ifu">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
-                                        <segue destination="fnL-Ge-FKS" kind="push" id="vz3-E0-cng"/>
+                                        <action selector="sinQueso" destination="Nj2-aa-VnY" id="IEX-iq-xoy"/>
                                     </connections>
                                 </button>
                             </items>
@@ -153,12 +154,12 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="543" y="739"/>
+            <point key="canvasLocation" x="807" y="347"/>
         </scene>
-        <!--Interface Controller-->
+        <!--IngredientesController-->
         <scene sceneID="LGN-tU-pcX">
             <objects>
-                <controller id="fnL-Ge-FKS">
+                <controller identifier="IngredientesController" id="fnL-Ge-FKS" customClass="IngredientesController" customModule="PizzasWatch_WatchKit_Extension">
                     <items>
                         <label width="1" alignment="left" text="Ingredientes" textAlignment="center" id="IfB-bt-LWU">
                             <color key="textColor" red="0.89019607840000003" green="0.074509803920000006" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
@@ -168,69 +169,111 @@
                         <label alignment="left" text="Selecciona de 1 a 5 ingredientes" textAlignment="center" numberOfLines="2" id="6vc-P7-KJ8"/>
                         <group width="1" alignment="left" layout="vertical" id="I0F-Eg-ooE">
                             <items>
-                                <switch width="1" alignment="left" value="YES" title="Jamón" id="qHV-jD-exc">
+                                <switch width="1" alignment="left" title="Jamón" id="qHV-jD-exc">
                                     <fontDescription key="font" type="italicSystem" pointSize="15"/>
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="tintColor" red="0.89019607840000003" green="0.074509803920000006" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="switchJamonChange:" destination="fnL-Ge-FKS" id="FyZ-xN-b8z"/>
+                                    </connections>
                                 </switch>
-                                <switch width="1" alignment="left" value="YES" title="Pepperoni" id="7My-xX-FwP">
+                                <switch width="1" alignment="left" title="Pepperoni" id="7My-xX-FwP">
                                     <fontDescription key="font" type="italicSystem" pointSize="15"/>
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="tintColor" red="0.89019607840000003" green="0.074509803920000006" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="switchPepperoniChange:" destination="fnL-Ge-FKS" id="RTa-XH-Fee"/>
+                                    </connections>
                                 </switch>
-                                <switch width="1" alignment="left" value="YES" title="Pavo" id="hJY-Lv-Puh">
+                                <switch width="1" alignment="left" title="Pavo" id="hJY-Lv-Puh">
                                     <fontDescription key="font" type="italicSystem" pointSize="15"/>
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="tintColor" red="0.89019607840000003" green="0.074509803920000006" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="switchPavoChange:" destination="fnL-Ge-FKS" id="9nk-dd-Abl"/>
+                                    </connections>
                                 </switch>
-                                <switch width="1" alignment="left" value="YES" title="Salchicha" id="wlu-vC-DMK">
+                                <switch width="1" alignment="left" title="Salchicha" id="wlu-vC-DMK">
                                     <fontDescription key="font" type="italicSystem" pointSize="15"/>
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="tintColor" red="0.89019607840000003" green="0.074509803920000006" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="switchSalchichaChange:" destination="fnL-Ge-FKS" id="kW0-IK-gzF"/>
+                                    </connections>
                                 </switch>
-                                <switch width="1" alignment="left" value="YES" title="Aceituna" id="C5A-Fi-kUl">
+                                <switch width="1" alignment="left" title="Aceituna" id="C5A-Fi-kUl">
                                     <fontDescription key="font" type="italicSystem" pointSize="15"/>
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="tintColor" red="0.89019607840000003" green="0.074509803920000006" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="switchAceitunaChange:" destination="fnL-Ge-FKS" id="SbP-cQ-XCh"/>
+                                    </connections>
                                 </switch>
-                                <switch width="1" alignment="left" value="YES" title="Cebolla" id="xHV-AJ-dO2">
+                                <switch width="1" alignment="left" title="Cebolla" id="xHV-AJ-dO2">
                                     <fontDescription key="font" type="italicSystem" pointSize="15"/>
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="tintColor" red="0.89019607840000003" green="0.074509803920000006" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="switchCebollaChange:" destination="fnL-Ge-FKS" id="eVP-J5-vUw"/>
+                                    </connections>
                                 </switch>
-                                <switch width="1" alignment="left" value="YES" title="Pimiento" id="vTJ-Ga-B1d">
+                                <switch width="1" alignment="left" title="Pimiento" id="vTJ-Ga-B1d">
                                     <fontDescription key="font" type="italicSystem" pointSize="15"/>
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="tintColor" red="0.89019607840000003" green="0.074509803920000006" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="switchPimientoChange:" destination="fnL-Ge-FKS" id="Wmt-4c-qoj"/>
+                                    </connections>
                                 </switch>
-                                <switch width="1" alignment="left" value="YES" title="Piña" id="Kop-eG-5Ed">
+                                <switch width="1" alignment="left" title="Piña" id="Kop-eG-5Ed">
                                     <fontDescription key="font" type="italicSystem" pointSize="15"/>
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="tintColor" red="0.89019607840000003" green="0.074509803920000006" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="switchPinhaChange:" destination="fnL-Ge-FKS" id="fjH-X2-d2Z"/>
+                                    </connections>
                                 </switch>
-                                <switch width="1" alignment="left" value="YES" title="Anchoa" id="Qpg-tI-9vV">
+                                <switch width="1" alignment="left" title="Anchoa" id="Qpg-tI-9vV">
                                     <fontDescription key="font" type="italicSystem" pointSize="15"/>
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="tintColor" red="0.89019607840000003" green="0.074509803920000006" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="switchAnchoaChange:" destination="fnL-Ge-FKS" id="xJ7-0b-Pnh"/>
+                                    </connections>
                                 </switch>
+                                <label width="136" alignment="left" textAlignment="center" numberOfLines="5" id="RFY-Gj-ybS">
+                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
                                 <button width="1" alignment="left" title="Añadir ingredientes" id="T7Z-49-wG9">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
-                                        <segue destination="8i6-IV-Iu7" kind="push" id="8cj-Xd-jsZ"/>
+                                        <action selector="seleccionar" destination="fnL-Ge-FKS" id="P8N-eN-Ga0"/>
                                     </connections>
                                 </button>
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="lb_error" destination="RFY-Gj-ybS" id="5PY-CB-jqY"/>
+                        <outlet property="sw_aceituna" destination="C5A-Fi-kUl" id="hIC-ru-0Yg"/>
+                        <outlet property="sw_anchoa" destination="Qpg-tI-9vV" id="5HT-ok-bln"/>
+                        <outlet property="sw_cebolla" destination="xHV-AJ-dO2" id="aU8-ko-G2d"/>
+                        <outlet property="sw_jamon" destination="qHV-jD-exc" id="dVf-ST-YBc"/>
+                        <outlet property="sw_pavo" destination="hJY-Lv-Puh" id="DhG-3N-fFX"/>
+                        <outlet property="sw_pepperoni" destination="7My-xX-FwP" id="UAp-4S-g0c"/>
+                        <outlet property="sw_pimiento" destination="vTJ-Ga-B1d" id="tZ5-Nn-Ikh"/>
+                        <outlet property="sw_pinha" destination="Kop-eG-5Ed" id="fia-ce-HZe"/>
+                        <outlet property="sw_salchicha" destination="wlu-vC-DMK" id="Zqg-bU-rG1"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="850" y="514.75"/>
+            <point key="canvasLocation" x="1090" y="494.5"/>
         </scene>
-        <!--Interface Controller-->
+        <!--ConfirmacionController-->
         <scene sceneID="nlL-sR-IG3">
             <objects>
-                <controller id="8i6-IV-Iu7" customClass="InterfaceController" customModule="PizzasWatch_WatchKit_App" customModuleProvider="target">
+                <controller identifier="ConfirmacionController" id="8i6-IV-Iu7" customClass="ConfirmacionController" customModule="PizzasWatch_WatchKit_Extension">
                     <items>
                         <label width="1" alignment="left" text="Confirmación" textAlignment="center" id="gAC-GE-1P3">
                             <color key="textColor" red="0.89019607840000003" green="0.074509803920000006" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
@@ -242,18 +285,22 @@
                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="hZM-3A-MTY" kind="push" id="dou-ce-YVV"/>
+                                <segue destination="hZM-3A-MTY" kind="push" id="33b-ce-dK8"/>
                             </connections>
                         </button>
+                        <label width="136" alignment="left" numberOfLines="10" id="BeE-nI-M2R"/>
                     </items>
+                    <connections>
+                        <outlet property="lb_resumen" destination="BeE-nI-M2R" id="qJ0-JC-h9i"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1154" y="347"/>
+            <point key="canvasLocation" x="1386" y="329.5"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="tac-xD-mFg">
             <objects>
-                <controller id="hZM-3A-MTY" customClass="InterfaceController" customModule="PizzasWatch_WatchKit_App" customModuleProvider="target">
+                <controller id="hZM-3A-MTY">
                     <items>
                         <label width="1" alignment="left" text="Pedido realizado" textAlignment="center" id="dEQ-ZC-LEZ">
                             <color key="textColor" red="0.89019607840000003" green="0.074509803920000006" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
@@ -264,16 +311,14 @@
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Realizar nuevo pedido" id="yFw-7N-YPt">
                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="QcC-ba-ObK"/>
+                            </connections>
                         </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1154" y="728.5"/>
+            <point key="canvasLocation" x="1698" y="325.5"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="hgM-Dm-h1e"/>
-        <segue reference="qc2-vL-SwV"/>
-        <segue reference="vz3-E0-cng"/>
-    </inferredMetricsTieBreakers>
 </document>

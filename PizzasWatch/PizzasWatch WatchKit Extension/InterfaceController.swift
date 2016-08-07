@@ -2,7 +2,7 @@
 //  InterfaceController.swift
 //  PizzasWatch WatchKit Extension
 //
-//  Created by Mutlicanal3 on 4/8/16.
+//  Created by Daniel Suso Sánchez on 7/8/16.
 //  Copyright © 2016 Daniel Suso Sánchez. All rights reserved.
 //
 
@@ -27,5 +27,4 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
 }

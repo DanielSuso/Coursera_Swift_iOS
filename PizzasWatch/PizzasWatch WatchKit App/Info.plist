@@ -28,7 +28,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.danielsusosanchez.PizzasWatch</string>
+	<string>com.danielsuso.PizzasWatch</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>

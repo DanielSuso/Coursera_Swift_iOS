@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Pizzas
+//  PizzasWatch
 //
-//  Created by Daniel Suso Sánchez on 11/7/16.
+//  Created by Daniel Suso Sánchez on 7/8/16.
 //  Copyright © 2016 Daniel Suso Sánchez. All rights reserved.
 //
 
