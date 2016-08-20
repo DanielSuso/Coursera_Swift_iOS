@@ -16,7 +16,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var segmented: UISegmentedControl!
     
     private let locationManager = CLLocationManager()
-    private var partialDistance : CLLocationDistance = 0
     private var totalDistance : CLLocationDistance = 0
 
     override func viewDidLoad() {
@@ -25,6 +24,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        locationManager.distanceFilter = 50
         
         segmented.selectedSegmentIndex = 0
     }
@@ -42,13 +43,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
         self.setMapLocation(newLocation)
+        self.setPinAnnotation(newLocation)
         let distanceInMeters = oldLocation.distanceFromLocation(newLocation)
-        partialDistance += distanceInMeters
-        if (partialDistance > 50.0) {
-            self.setPinAnnotation(newLocation)
-            partialDistance = 0.0
-        }
         totalDistance += distanceInMeters
+    }
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        let alerta = UIAlertController(title: "ERROR", message: "error \(error.code)", preferredStyle: .Alert)
+        let accionOK = UIAlertAction(title: "OK", style: .Default, handler:
+            { accion in
+        })
+        alerta.addAction(accionOK)
+        self.presentViewController(alerta, animated: true, completion: nil)
     }
     
     func setMapLocation(location: CLLocation) {
