@@ -34,6 +34,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         if status == .AuthorizedWhenInUse {
             locationManager.startUpdatingLocation()
             map.showsUserLocation = true
+            map.zoomEnabled = true
         }
         else {
             locationManager.stopUpdatingLocation()
