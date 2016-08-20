@@ -288,6 +288,7 @@
 				F69C3BCF1D6641390052F5AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

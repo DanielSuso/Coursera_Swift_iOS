@@ -68,7 +68,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     func setPinAnnotation(location: CLLocation) {
         let pin = MKPointAnnotation()
-        pin.title = "Posición: (\(location.coordinate.longitude), \(location.coordinate.latitude))"
+        pin.title = "(Longitud: \(location.coordinate.longitude), Latitud: \(location.coordinate.latitude))"
         pin.subtitle = "Distancia recorrida: \(NSString(format: "%.2f", totalDistance)) metros"
         pin.coordinate = location.coordinate
         map.addAnnotation(pin)
