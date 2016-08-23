@@ -7,21 +7,45 @@
 //
 
 import UIKit
+import CoreData
 
 class MasterViewController: UITableViewController, UISearchBarDelegate {
 
     @IBOutlet weak var searchBar: UISearchBar!
+    
     var detailViewController: DetailViewController? = nil
     var books = [Book]()
+    var managedObjectContext : NSManagedObjectContext? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         
         searchBar.hidden = true
     }
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        
+        // Obtenemos todos los libros en la base de datos
+        let newBookEntity = NSEntityDescription.entityForName("Book", inManagedObjectContext: self.managedObjectContext!)
+        let query = newBookEntity?.managedObjectModel.fetchRequestTemplateForName("getAllBooks")
+        do {
+            let bookEntities = try self.managedObjectContext?.executeFetchRequest(query!)
+            self.books.removeAll()
+            for bookEntity in bookEntities! {
+                let imageData : NSData? = bookEntity.valueForKey("portada") as? NSData
+                let book = Book(isbn: bookEntity.valueForKey("isbn") as! String,
+                            autores: bookEntity.valueForKey("autores") as! String,
+                            titulo: bookEntity.valueForKey("titulo") as! String,
+                            portada: imageData != nil ? UIImage(data: imageData!) : nil)
+                books.append(book)
+            }
+        }
+        catch {
+            
+        }
         
         self.tableView.reloadData()
     }
@@ -47,6 +71,12 @@ class MasterViewController: UITableViewController, UISearchBarDelegate {
                 detail.isSearch = false
                 detail.book = selectedBook
             }
+        }
+        else if segue.identifier == "detailSegue2" {
+            let selectedBook = sender as! Book
+            let detail = segue.destinationViewController as! DetailViewController
+            detail.isSearch = false
+            detail.book = selectedBook
         }
     }
 
@@ -81,7 +111,19 @@ class MasterViewController: UITableViewController, UISearchBarDelegate {
         searchBar.hidden = true
         searchBar.resignFirstResponder()
         
-        self.performSegueWithIdentifier("searchSegue", sender: isbn)
+        let bookEntity = self.getBookByISBN(isbn!)
+        
+        if (bookEntity == nil) {
+            self.performSegueWithIdentifier("searchSegue", sender: isbn)
+        }
+        else {
+            let imageData : NSData? = bookEntity!.valueForKey("portada") as? NSData
+            let book = Book(isbn: bookEntity!.valueForKey("isbn") as! String,
+                            autores: bookEntity!.valueForKey("autores") as! String,
+                            titulo: bookEntity!.valueForKey("titulo") as! String,
+                            portada: imageData != nil ? UIImage(data: imageData!) : nil)
+            self.performSegueWithIdentifier("detailSegue2", sender: book)
+        }
     }
     
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
@@ -92,17 +134,45 @@ class MasterViewController: UITableViewController, UISearchBarDelegate {
     
     internal func addBook(book: Book) {
         
-        for i in 0..<books.count {
-            
-            let b : Book = books[i]
-            if b.isbn == book.isbn {
-                
-                books.removeAtIndex(i)
-                break
-            }
+        var bookEntity : NSManagedObject? = self.getBookByISBN(book.isbn)
+        
+        if (bookEntity == nil) {
+            bookEntity = NSEntityDescription.insertNewObjectForEntityForName("Book", inManagedObjectContext: self.managedObjectContext!)
         }
         
-        books.append(book)
+        bookEntity!.setValue(book.titulo, forKey: "titulo")
+        bookEntity!.setValue(book.autores, forKey: "autores")
+        bookEntity!.setValue(book.isbn, forKey: "isbn")
+        if (book.portada != nil) {
+            bookEntity!.setValue(UIImagePNGRepresentation(book.portada!), forKey: "portada")
+        }
+        
+        do {
+            try self.managedObjectContext?.save()
+        }
+        catch {
+            
+        }
      }
+    
+    internal func getBookByISBN(isbn: String) -> NSManagedObject? {
+        
+        var bookEntity : NSManagedObject? = nil
+        
+        // Miramos si el libro ya existe en la base de datos para modificarlo o crear uno nuevo
+        let newBookEntity = NSEntityDescription.entityForName("Book", inManagedObjectContext: self.managedObjectContext!)
+        let query = newBookEntity?.managedObjectModel.fetchRequestFromTemplateWithName("getBookByISBN", substitutionVariables: ["isbn": isbn])
+        do {
+            let entity = try self.managedObjectContext?.executeFetchRequest(query!)
+            if entity != nil && entity!.count > 0 {
+                bookEntity = entity![0] as? NSManagedObject
+            }
+        }
+        catch {
+            
+        }
+        
+        return bookEntity
+    }
 }
 

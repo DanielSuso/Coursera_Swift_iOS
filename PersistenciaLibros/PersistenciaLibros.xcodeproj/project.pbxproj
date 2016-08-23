@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		F65B59841D6CAD0D0066FE24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B59831D6CAD0D0066FE24 /* AppDelegate.swift */; };
-		F65B59891D6CAD0D0066FE24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65B59871D6CAD0D0066FE24 /* Main.storyboard */; };
 		F65B598C1D6CAD0D0066FE24 /* PersistenciaLibros.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F65B598A1D6CAD0D0066FE24 /* PersistenciaLibros.xcdatamodeld */; };
 		F65B598E1D6CAD0D0066FE24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F65B598D1D6CAD0D0066FE24 /* Assets.xcassets */; };
 		F65B59911D6CAD0D0066FE24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65B598F1D6CAD0D0066FE24 /* LaunchScreen.storyboard */; };
 		F65B599A1D6CADAF0066FE24 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B59981D6CADAF0066FE24 /* DetailViewController.swift */; };
 		F65B599B1D6CADAF0066FE24 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B59991D6CADAF0066FE24 /* MasterViewController.swift */; };
+		F65B599E1D6CAE1E0066FE24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65B599C1D6CAE1E0066FE24 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F65B59801D6CAD0D0066FE24 /* PersistenciaLibros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersistenciaLibros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65B59831D6CAD0D0066FE24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F65B59881D6CAD0D0066FE24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F65B598B1D6CAD0D0066FE24 /* PersistenciaLibros.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersistenciaLibros.xcdatamodel; sourceTree = "<group>"; };
 		F65B598D1D6CAD0D0066FE24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F65B59901D6CAD0D0066FE24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F65B59921D6CAD0D0066FE24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F65B59981D6CADAF0066FE24 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F65B59991D6CADAF0066FE24 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		F65B599D1D6CAE1E0066FE24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 				F65B59831D6CAD0D0066FE24 /* AppDelegate.swift */,
 				F65B59981D6CADAF0066FE24 /* DetailViewController.swift */,
 				F65B59991D6CADAF0066FE24 /* MasterViewController.swift */,
-				F65B59871D6CAD0D0066FE24 /* Main.storyboard */,
 				F65B598D1D6CAD0D0066FE24 /* Assets.xcassets */,
+				F65B599C1D6CAE1E0066FE24 /* Main.storyboard */,
 				F65B598F1D6CAD0D0066FE24 /* LaunchScreen.storyboard */,
 				F65B59921D6CAD0D0066FE24 /* Info.plist */,
 				F65B598A1D6CAD0D0066FE24 /* PersistenciaLibros.xcdatamodeld */,
@@ -128,9 +128,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F65B599E1D6CAE1E0066FE24 /* Main.storyboard in Resources */,
 				F65B59911D6CAD0D0066FE24 /* LaunchScreen.storyboard in Resources */,
 				F65B598E1D6CAD0D0066FE24 /* Assets.xcassets in Resources */,
-				F65B59891D6CAD0D0066FE24 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,20 +151,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F65B59871D6CAD0D0066FE24 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F65B59881D6CAD0D0066FE24 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F65B598F1D6CAD0D0066FE24 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F65B59901D6CAD0D0066FE24 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F65B599C1D6CAE1E0066FE24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F65B599D1D6CAE1E0066FE24 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
