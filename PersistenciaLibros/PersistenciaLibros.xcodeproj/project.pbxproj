@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F65B59841D6CAD0D0066FE24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B59831D6CAD0D0066FE24 /* AppDelegate.swift */; };
+		F65B59891D6CAD0D0066FE24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65B59871D6CAD0D0066FE24 /* Main.storyboard */; };
+		F65B598C1D6CAD0D0066FE24 /* PersistenciaLibros.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F65B598A1D6CAD0D0066FE24 /* PersistenciaLibros.xcdatamodeld */; };
+		F65B598E1D6CAD0D0066FE24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F65B598D1D6CAD0D0066FE24 /* Assets.xcassets */; };
+		F65B59911D6CAD0D0066FE24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65B598F1D6CAD0D0066FE24 /* LaunchScreen.storyboard */; };
+		F65B599A1D6CADAF0066FE24 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B59981D6CADAF0066FE24 /* DetailViewController.swift */; };
+		F65B599B1D6CADAF0066FE24 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B59991D6CADAF0066FE24 /* MasterViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F65B59801D6CAD0D0066FE24 /* PersistenciaLibros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersistenciaLibros.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F65B59831D6CAD0D0066FE24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F65B59881D6CAD0D0066FE24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F65B598B1D6CAD0D0066FE24 /* PersistenciaLibros.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersistenciaLibros.xcdatamodel; sourceTree = "<group>"; };
+		F65B598D1D6CAD0D0066FE24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F65B59901D6CAD0D0066FE24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F65B59921D6CAD0D0066FE24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F65B59981D6CADAF0066FE24 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F65B59991D6CADAF0066FE24 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F65B597D1D6CAD0D0066FE24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F65B59771D6CAD0D0066FE24 = {
+			isa = PBXGroup;
+			children = (
+				F65B59821D6CAD0D0066FE24 /* PersistenciaLibros */,
+				F65B59811D6CAD0D0066FE24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F65B59811D6CAD0D0066FE24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F65B59801D6CAD0D0066FE24 /* PersistenciaLibros.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F65B59821D6CAD0D0066FE24 /* PersistenciaLibros */ = {
+			isa = PBXGroup;
+			children = (
+				F65B59831D6CAD0D0066FE24 /* AppDelegate.swift */,
+				F65B59981D6CADAF0066FE24 /* DetailViewController.swift */,
+				F65B59991D6CADAF0066FE24 /* MasterViewController.swift */,
+				F65B59871D6CAD0D0066FE24 /* Main.storyboard */,
+				F65B598D1D6CAD0D0066FE24 /* Assets.xcassets */,
+				F65B598F1D6CAD0D0066FE24 /* LaunchScreen.storyboard */,
+				F65B59921D6CAD0D0066FE24 /* Info.plist */,
+				F65B598A1D6CAD0D0066FE24 /* PersistenciaLibros.xcdatamodeld */,
+			);
+			path = PersistenciaLibros;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F65B597F1D6CAD0D0066FE24 /* PersistenciaLibros */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F65B59951D6CAD0D0066FE24 /* Build configuration list for PBXNativeTarget "PersistenciaLibros" */;
+			buildPhases = (
+				F65B597C1D6CAD0D0066FE24 /* Sources */,
+				F65B597D1D6CAD0D0066FE24 /* Frameworks */,
+				F65B597E1D6CAD0D0066FE24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PersistenciaLibros;
+			productName = PersistenciaLibros;
+			productReference = F65B59801D6CAD0D0066FE24 /* PersistenciaLibros.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F65B59781D6CAD0D0066FE24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Daniel Suso Sánchez";
+				TargetAttributes = {
+					F65B597F1D6CAD0D0066FE24 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F65B597B1D6CAD0D0066FE24 /* Build configuration list for PBXProject "PersistenciaLibros" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F65B59771D6CAD0D0066FE24;
+			productRefGroup = F65B59811D6CAD0D0066FE24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F65B597F1D6CAD0D0066FE24 /* PersistenciaLibros */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F65B597E1D6CAD0D0066FE24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F65B59911D6CAD0D0066FE24 /* LaunchScreen.storyboard in Resources */,
+				F65B598E1D6CAD0D0066FE24 /* Assets.xcassets in Resources */,
+				F65B59891D6CAD0D0066FE24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F65B597C1D6CAD0D0066FE24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F65B599B1D6CADAF0066FE24 /* MasterViewController.swift in Sources */,
+				F65B59841D6CAD0D0066FE24 /* AppDelegate.swift in Sources */,
+				F65B598C1D6CAD0D0066FE24 /* PersistenciaLibros.xcdatamodeld in Sources */,
+				F65B599A1D6CADAF0066FE24 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F65B59871D6CAD0D0066FE24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F65B59881D6CAD0D0066FE24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F65B598F1D6CAD0D0066FE24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F65B59901D6CAD0D0066FE24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F65B59931D6CAD0D0066FE24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F65B59941D6CAD0D0066FE24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F65B59961D6CAD0D0066FE24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PersistenciaLibros/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielsuso.PersistenciaLibros;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F65B59971D6CAD0D0066FE24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PersistenciaLibros/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielsuso.PersistenciaLibros;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F65B597B1D6CAD0D0066FE24 /* Build configuration list for PBXProject "PersistenciaLibros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F65B59931D6CAD0D0066FE24 /* Debug */,
+				F65B59941D6CAD0D0066FE24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F65B59951D6CAD0D0066FE24 /* Build configuration list for PBXNativeTarget "PersistenciaLibros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F65B59961D6CAD0D0066FE24 /* Debug */,
+				F65B59971D6CAD0D0066FE24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F65B598A1D6CAD0D0066FE24 /* PersistenciaLibros.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F65B598B1D6CAD0D0066FE24 /* PersistenciaLibros.xcdatamodel */,
+			);
+			currentVersion = F65B598B1D6CAD0D0066FE24 /* PersistenciaLibros.xcdatamodel */;
+			path = PersistenciaLibros.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F65B59781D6CAD0D0066FE24 /* Project object */;
+}
