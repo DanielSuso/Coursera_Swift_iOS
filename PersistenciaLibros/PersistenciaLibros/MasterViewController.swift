@@ -28,7 +28,6 @@ class MasterViewController: UITableViewController, UISearchBarDelegate {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        // Obtenemos todos los libros en la base de datos
         let newBookEntity = NSEntityDescription.entityForName("Book", inManagedObjectContext: self.managedObjectContext!)
         let query = newBookEntity?.managedObjectModel.fetchRequestTemplateForName("getAllBooks")
         do {
@@ -159,7 +158,6 @@ class MasterViewController: UITableViewController, UISearchBarDelegate {
         
         var bookEntity : NSManagedObject? = nil
         
-        // Miramos si el libro ya existe en la base de datos para modificarlo o crear uno nuevo
         let newBookEntity = NSEntityDescription.entityForName("Book", inManagedObjectContext: self.managedObjectContext!)
         let query = newBookEntity?.managedObjectModel.fetchRequestFromTemplateWithName("getBookByISBN", substitutionVariables: ["isbn": isbn])
         do {
